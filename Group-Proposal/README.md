@@ -1,0 +1,1 @@
+This is the Group-Proposal folder containing the project proposal document.
