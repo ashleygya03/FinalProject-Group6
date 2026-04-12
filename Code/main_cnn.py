@@ -5,10 +5,11 @@ import numpy as np
 from sklearn.metrics import classification_report, confusion_matrix
 from keras.callbacks import EarlyStopping, ReduceLROnPlateau
 
-from src.config import IMAGE_SIZE, IMG_CHANNEL, N_CLASSES, CATEGORIES
-from src.dataset import ASLDataset
-from src.model import ASLModel
+from src.config_cnn import IMAGE_SIZE, IMG_CHANNEL, N_CLASSES, CATEGORIES
+from src.dataset_cnn import ASLDataset
+from src.model_cnn import ASLModel
 from src.utils import plot_training_history, plot_confusion_matrix
+
 
 
 def main():
