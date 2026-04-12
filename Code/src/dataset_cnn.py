@@ -4,7 +4,7 @@ import shutil
 import pandas as pd
 import splitfolders
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from src.config import BASE_PATH, WORKING_PATH, CATEGORIES, IMAGE_SIZE, BATCH_SIZE
+from src.config_cnn import BASE_PATH, WORKING_PATH, CATEGORIES, IMAGE_SIZE, BATCH_SIZE
 
 
 class ASLDataset:
