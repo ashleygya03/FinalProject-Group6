@@ -1,5 +1,6 @@
 # Data and Models
-dataset/
+# Ignore the dataset folder
+data/
 asl_data/
 *.h5
 *.keras
@@ -8,6 +9,7 @@ asl_data/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
+*.pyc
 *.py[codz]
 *$py.class
 
@@ -33,6 +35,9 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+
+# Ignore OS-specific files
+.DS_Store
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
