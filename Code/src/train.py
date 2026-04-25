@@ -17,7 +17,7 @@ OUTPUT_DIR = SCRIPT_DIR.parent / "models"
 
 # --- Hyperparameters ---
 N_EPOCH = 15
-BATCH_SIZE = 128   
+BATCH_SIZE = 128  
 LR = 1e-4          
 IMAGE_SIZE = 224   
 
@@ -78,7 +78,7 @@ def main():
     ]
 
     # 5. Training
-    print(f"\n--- Starting Unified Training for {N_EPOCH} Epochs ---")
+    print(f"\n--- Starting Training for {N_EPOCH} Epochs ---")
     model.fit(
         train_ds,
         validation_data=val_ds,
