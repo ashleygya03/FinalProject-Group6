@@ -5,12 +5,11 @@ from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 from src.model_mobilenetv2 import ASLModel
 from src.config_mobilenetv2 import IMAGE_SIZE, IMG_CHANNEL, N_CLASSES
 
-
 def predict_image(image, model_path="best_asl_model.keras", class_file="class_names.json", image_size=IMAGE_SIZE):
     # Rebuild the model architecture
     asl = ASLModel(image_size, IMG_CHANNEL, N_CLASSES)
     model = asl.get_model()
-
+    
     # Load only the weights to bypass Keras 2 vs Keras 3 architecture incompatibilities
     model.load_weights(model_path)
 
