@@ -11,6 +11,10 @@ This project develops a deep learning–based computer vision system for **stati
 
 The project compares two transfer-learning image classification models, **MobileNetV2** and **ResNet-50**, for ASL letter recognition. To improve real-world performance, we designed a three-phase data pipeline — **Audit → Preprocess → Merge** — to standardize, clean, and combine publicly available ASL datasets into a balanced final dataset. The workflow includes image preprocessing, model training, evaluation, and deployment through a **Streamlit demo** based hand detection.
 
+**Datasets:**
+- [ASL Alphabet](https://www.kaggle.com/datasets/grassknoted/asl-alphabet/code?datasetId=23079&sortBy=voteCount)
+- [SignAlphaSet](https://data.mendeley.com/datasets/8fmvr9m98w/2)
+
 ## GitHub Directory Structure
 ```text
 FinalProject-Group6/
