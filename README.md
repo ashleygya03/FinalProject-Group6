@@ -4,6 +4,8 @@
 
 **Project:** Static American Sign Language (ASL) Alphabet Recognition  
 
+**Members:** Fyrooz Khan | Ashley Gyapomah
+
 ## Overview
 This project develops a deep learning–based computer vision system for **static American Sign Language (ASL) alphabet recognition** from images. The goal is to improve accessibility by building a model that can classify ASL hand signs and help reduce communication barriers between Deaf and Hard-of-Hearing users and hearing non-signers.
 
