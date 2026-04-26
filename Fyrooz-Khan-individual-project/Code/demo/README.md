@@ -5,7 +5,7 @@ This folder contains a Streamlit demo for American Sign Language (ASL) sign pred
 ## Files
 - `app.py` — Streamlit app
 - `predict.py` — prediction logic
-- `requirements.txt` — required packages
+- `requirements_demo.txt` — required packages
 - `class_names.json` — class labels
 - `hand_landmarker.task` — MediaPipe hand detection model
 - `best_asl_model.keras` or `best_asl.weights.h5` — trained model file
