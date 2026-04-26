@@ -1,10 +1,10 @@
 # FinalProject-Group6
 
-**Course:** DATS 6303 – Deep Learning  
-
-**Project:** Static American Sign Language (ASL) Alphabet Recognition  
+*Project:* Static American Sign Language (ASL) Alphabet Recognition  
 
 **Members:** Fyrooz Khan | Ashley Gyapomah
+
+**Course:** DATS 6303 – Deep Learning  
 
 ## Overview
 This project develops a deep learning–based computer vision system for **static American Sign Language (ASL) alphabet recognition** from images. The goal is to build a model that can classify ASL hand signs and help reduce communication barriers between Deaf and Hard-of-Hearing users and hearing non-signers.
