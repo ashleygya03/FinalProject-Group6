@@ -1,6 +1,6 @@
 # Code
 
-This folder contains all code for the final project, including data preprocessing, model training, and the Streamlit demo.
+This folder contains all code for the final project, including data preprocessing, model training, and the Streamlit demo. Go through the README.md section of each folder for detailed understanding of running the codes.
 
 ## Folder structure
 
