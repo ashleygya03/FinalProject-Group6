@@ -50,11 +50,14 @@ Run scripts in this order:
 3. `merge_datasets.py` — merges datasets into the final balanced dataset
 
 > Note: Place the two datasets in the `data-preprocessing/` folder before running.
+> **Datasets:**
+- [ASL Alphabet](https://www.kaggle.com/datasets/grassknoted/asl-alphabet/code?datasetId=23079&sortBy=voteCount)
+- [SignAlphaSet](https://data.mendeley.com/datasets/8fmvr9m98w/2)
 
 ---
 
 ### 2. `resnet50/` and `mobilenetv2/`
-Run on the new dataset from the preprocessing:
+Run the following on the new produced dataset:
 - `main_resnet50.py` — trains and evaluates the ResNet50 model
 - `main_mobilenetv2.py` — trains and evaluates the MobileNetV2 model
 
@@ -64,6 +67,6 @@ Run on the new dataset from the preprocessing:
 Run after training the MobileNetV2 model:
 - `app.py` — launches the Streamlit app for live ASL sign prediction
 
-> Note: Place the trained model file (`best_asl_model.keras`) in the `demo/` folder before running.
+> Note: Place the trained MobileNetV2 model file (`best_asl_model.keras`) in the `demo/` folder before running.
 
 
