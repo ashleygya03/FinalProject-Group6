@@ -40,7 +40,7 @@ Code/
     ├── hand_landmarker.task
     ├── best_asl_model.keras
     └── src/
-
+```
 ## Run Order
 
 ### 1. `data-preprocessing/`
@@ -63,3 +63,4 @@ Run after training the MobileNetV2 model:
 - `app.py` — launches the Streamlit app for live ASL sign prediction
 
 > Note: Place the trained model file (`best_asl_model.keras`) in the `demo/` folder before running.
+
