@@ -1,0 +1,9 @@
+{
+  "accuracy": 99.31,
+  "macro_precision": 99.33,
+  "macro_recall": 99.31,
+  "macro_f1": 99.31,
+  "top5_accuracy": 99.96,
+  "parameters": 2425306,
+  "test_loss": 0.02
+}
