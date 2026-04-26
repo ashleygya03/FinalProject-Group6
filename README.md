@@ -21,10 +21,9 @@ FinalProject-Group6/
 ├── Ashley-Gyapomah-Individual-Project/   # Ashley's individual project files
 ├── Fyrooz-Khan-individual-project/       # Fyrooz's individual project files
 ├── Code/                                 # Source code for preprocessing, models, and Streamlit demo
-├── Final-Group-Presentation/             # Final presentation slides and materials
-├── Final-Group-Project-Report/           # Final group report and documentation
+├── Final-Group-Presentation/             # Final presentation slides 
+├── Final-Group-Project-Report/           # Final group report 
 ├── Group-Proposal/                       # Initial group proposal
 ├── README.md                             # Project overview (this file)
-├── requirements.txt                      # Project dependencies
 └── .gitignore                            # Git ignore file
 ```
