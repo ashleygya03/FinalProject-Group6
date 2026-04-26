@@ -7,7 +7,7 @@
 **Members:** Fyrooz Khan | Ashley Gyapomah
 
 ## Overview
-This project develops a deep learning–based computer vision system for **static American Sign Language (ASL) alphabet recognition** from images. The goal is to improve accessibility by building a model that can classify ASL hand signs and help reduce communication barriers between Deaf and Hard-of-Hearing users and hearing non-signers.
+This project develops a deep learning–based computer vision system for **static American Sign Language (ASL) alphabet recognition** from images. The goal is to build a model that can classify ASL hand signs and help reduce communication barriers between Deaf and Hard-of-Hearing users and hearing non-signers.
 
 The project compares two transfer-learning image classification models, **MobileNetV2** and **ResNet-50**, for ASL letter recognition. To improve real-world performance, we designed a three-phase data pipeline — **Audit → Preprocess → Merge** — to standardize, clean, and combine publicly available ASL datasets into a balanced final dataset. The workflow includes image preprocessing, model training, evaluation, and deployment through a **Streamlit demo** based hand detection.
 
