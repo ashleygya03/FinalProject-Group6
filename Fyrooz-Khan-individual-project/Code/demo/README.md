@@ -8,7 +8,7 @@ This folder contains a Streamlit demo for American Sign Language (ASL) sign pred
 - `requirements_demo.txt` — required packages
 - `class_names.json` — class labels
 - `hand_landmarker.task` — MediaPipe hand detection model
-- `best_asl_model.keras`  — trained model file             \\upload this to run the app.py file
+- `best_asl_model.keras` — trained model file (this file must be in this directory to run `app.py`)
 - `src/` — model and config files
 
 ## Run the demo
