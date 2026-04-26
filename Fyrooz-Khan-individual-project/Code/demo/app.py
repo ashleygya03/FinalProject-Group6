@@ -12,7 +12,7 @@ from predict import predict_image
 
 st.set_page_config(page_title="ASL Sign Detector", layout="centered")
 st.title("ASL Sign Language Detection")
-st.write("Take a photo of your hand sign. The app will detect the hand, crop it, and predict the sign.")
+st.write("Take a photo of your Right hand sign. The app will detect the hand, crop it, and predict the sign.")
 
 HAND_MODEL_PATH = "hand_landmarker.task"   # keep this file in the same folder as app.py
 
