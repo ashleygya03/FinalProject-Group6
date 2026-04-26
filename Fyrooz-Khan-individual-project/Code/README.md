@@ -49,10 +49,12 @@ Run scripts in this order:
 2. `preprocess.py` — crops and filters the 87K dataset
 3. `merge_datasets.py` — merges datasets into the final balanced dataset
 
+> Note: Place the two datasets in the `data-preprocessing/` folder before running.
+
 ---
 
 ### 2. `resnet50/` and `mobilenetv2/`
-Run after preprocessing is complete:
+Run on the new dataset from the preprocessing:
 - `main_resnet50.py` — trains and evaluates the ResNet50 model
 - `main_mobilenetv2.py` — trains and evaluates the MobileNetV2 model
 
