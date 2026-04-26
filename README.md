@@ -1,6 +1,6 @@
 # FinalProject-Group6
 
-*Project:* Static American Sign Language (ASL) Alphabet Recognition  
+# **Project:** Static American Sign Language (ASL) Alphabet Recognition  
 
 **Members:** Fyrooz Khan | Ashley Gyapomah
 
