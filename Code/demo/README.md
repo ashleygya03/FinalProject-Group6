@@ -3,6 +3,7 @@
 This folder contains a Streamlit demo for American Sign Language (ASL) sign prediction using a trained MobileNetV2-based model. The app captures an image, processes it, and predicts the hand sign class.
 
 ## Files
+- `ASL_Alphabet_list.jpg` — American Alphabets chart
 - `app.py` — Streamlit app
 - `predict.py` — prediction logic
 - `requirements_demo.txt` — required packages
