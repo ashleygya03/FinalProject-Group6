@@ -1,4 +1,4 @@
-# ASL Sign Language Detection - Individual Project Archive
+# ASL Sign Language Detection - AG - Individual Project Archive
 
 ## Project Overview
 This folder contains the individual contributions and research conducted for the ASL Alphabet detection capstone. My focus was on implementing a robust MobileNetV2 architecture capable of high-accuracy inference in real-world lighting conditions via a Streamlit web interface.
