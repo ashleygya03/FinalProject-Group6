@@ -22,6 +22,12 @@ Or download it from terminal inside the `demo` folder:
 wget --no-check-certificate "https://drive.google.com/uc?export=download&id=1XS6T9E1l-4LDbOpx_vQQmSwPpCUsSE2t" -O best_asl_model.keras
 ```
 
+## Install dependencies:
+
+```bash
+pip install -r requirements_demo.txt
+```
+
 ## Run the demo
 
 ```bash
