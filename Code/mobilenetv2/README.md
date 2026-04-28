@@ -14,3 +14,14 @@ Open terminal in this `mobilenetv2` folder and run to get model and outputs:
 
 ```bash
 python main_mobilenetv2.py
+
+```
+## Download the trained model
+
+- [Model](https://drive.google.com/file/d/1XS6T9E1l-4LDbOpx_vQQmSwPpCUsSE2t/view?usp=drive_link)
+
+Or download it from terminal inside the `demo` folder:
+
+```bash
+wget --no-check-certificate "https://drive.google.com/uc?export=download&id=1XS6T9E1l-4LDbOpx_vQQmSwPpCUsSE2t" -O best_asl_model.keras
+```
