@@ -14,7 +14,9 @@ This folder contains a Streamlit demo for American Sign Language (ASL) sign pred
 
 ## Download the trained model
 
-Open terminal in this `demo` folder and run:
+- [Download trained model from Google Drive](https://drive.google.com/file/d/1XS6T9E1l-4LDbOpx_vQQmSwPpCUsSE2t/view?usp=drive_link)
+
+Or download it from terminal inside the `demo` folder:
 
 ```bash
 wget --no-check-certificate "https://drive.google.com/uc?export=download&id=1XS6T9E1l-4LDbOpx_vQQmSwPpCUsSE2t" -O best_asl_model.keras
