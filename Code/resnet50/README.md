@@ -14,3 +14,14 @@ Open terminal in this `resnet50` folder and run to generate model and outputs:
 
 ```bash
 python main_resnet50.py
+```
+
+## Download the trained model
+
+- [Model](https://drive.google.com/file/d/15V-j7nm8cDqXsXp7hmWk-o0-50tQiiSn/view?usp=drive_link)
+
+Or download it from terminal inside the `demo` folder:
+
+```bash
+wget --no-check-certificate "https://drive.google.com/uc?export=download&id=15V-j7nm8cDqXsXp7hmWk-o0-50tQiiSn" -O best_asl_model.keras
+```
