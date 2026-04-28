@@ -11,9 +11,16 @@ This folder contains a Streamlit demo for American Sign Language (ASL) sign pred
 - `best_asl_model.keras` — trained model file (this file must be in this directory to run `app.py`)
 - `src/` — model and config files
 
-## Run the demo
+
+## Download the trained model
 
 Open terminal in this `demo` folder and run:
+
+```bash
+wget --no-check-certificate "https://drive.google.com/uc?export=download&id=1XS6T9E1l-4LDbOpx_vQQmSwPpCUsSE2t" -O best_asl_model.keras
+```
+
+## Run the demo
 
 ```bash
 streamlit run app.py
