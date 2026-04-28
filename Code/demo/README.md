@@ -14,7 +14,7 @@ This folder contains a Streamlit demo for American Sign Language (ASL) sign pred
 
 ## Download the trained model
 
-- [Download trained model from Google Drive](https://drive.google.com/file/d/1XS6T9E1l-4LDbOpx_vQQmSwPpCUsSE2t/view?usp=drive_link)
+- [Model](https://drive.google.com/file/d/1XS6T9E1l-4LDbOpx_vQQmSwPpCUsSE2t/view?usp=drive_link)
 
 Or download it from terminal inside the `demo` folder:
 
