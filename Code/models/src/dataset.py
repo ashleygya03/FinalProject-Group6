@@ -5,7 +5,7 @@ import pandas as pd
 import splitfolders
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
-from configs.config import BASE_PATH, WORKING_PATH, CATEGORIES, IMAGE_SIZE, BATCH_SIZE
+from Code.configs.config import BASE_PATH, WORKING_PATH, CATEGORIES, IMAGE_SIZE, BATCH_SIZE
 
 class ASLDataset:
     """Class to manage dataset loading, splitting, and generators."""

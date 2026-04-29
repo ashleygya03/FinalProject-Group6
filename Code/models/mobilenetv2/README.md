@@ -4,7 +4,6 @@ This folder contains the MobileNetV2-based American Sign Language (ASL) classifi
 
 ## Main files
 - `main_mobilenetv2.py` — main training and evaluation script
-- `tests/` — test files
 - `requirements.txt` — required packages
 
 ## Run the project
@@ -12,7 +11,7 @@ This folder contains the MobileNetV2-based American Sign Language (ASL) classifi
 Open terminal in this `mobilenetv2` folder and run to get model and outputs:
 
 ```bash
-python main_mobilenetv2.py
+python3 -m Code.models.mobilenetv2.main
 
 ```
 ## Download the trained model

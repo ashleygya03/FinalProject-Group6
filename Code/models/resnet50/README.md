@@ -11,7 +11,7 @@ This folder contains the ResNet50-based American Sign Language (ASL) classificat
 Open terminal in this `resnet50` folder and run to generate model and outputs:
 
 ```bash
-python main_resnet50.py
+python3 -m Code.models.resnet50.main
 ```
 
 ## Download the trained model
