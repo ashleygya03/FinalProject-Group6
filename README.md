@@ -1,4 +1,4 @@
-# American Sign Language (ASL) Alphabet Classification using Deep Learning  
+# 🧠 American Sign Language (ASL) Alphabet Classification using Deep Learning  
 ### A Comparative Study of ResNet-50 and MobileNetV2
 
 **Members:** Fyrooz Khan | Ashley Gyapomah  
@@ -37,14 +37,24 @@ The full workflow includes:
 ---
 
 ## Project Structure
+
 ```text
 FinalProject-Group6/
-├── Ashley-Gyapomah-Individual-Project/   # Ashley's individual project files
-├── Fyrooz-Khan-individual-project/       # Fyrooz's individual project files
-├── Code/                                 # Source code for preprocessing, models, and Streamlit demo
-├── Final-Group-Presentation/             # Final presentation slides 
-├── Final-Group-Project-Report/           # Final group report 
-├── Group-Proposal/                       # Initial group proposal
-├── README.md                             # Project overview (this file)
-└── .gitignore                            # Git ignore file
-```
+├── Ashley-Gyapomah-Individual-Project/
+├── Fyrooz-Khan-individual-project/
+├── Code/
+│   ├── configs/
+│   │   └── config.py
+│   ├── data_preprocessing/
+│   ├── models/
+│   │   ├── mobilenetv2/
+│   │   ├── resnet50/
+│   │   └── src/
+│   ├── outputs/
+│   ├── demo/
+│   ├── artifacts/
+│   └── requirements.txt
+├── Final-Group-Presentation/
+├── Final-Group-Project-Report/
+├── Group-Proposal/
+└── README.md

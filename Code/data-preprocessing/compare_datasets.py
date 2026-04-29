@@ -15,10 +15,10 @@ import cv2
 import numpy as np
 
 # ── Configuration ────────────────────────────────────────────────────────────
-DATASET_1 = os.path.expanduser(
-    "~/Downloads/87k-asl/asl_alphabet_train/asl_alphabet_train"
-)
-DATASET_2 = os.path.expanduser("~/Downloads/26k-asl")
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+DATASET_1 = os.path.join(PROJECT_ROOT, "data", "asl_alphabet")
+DATASET_2 = os.path.join(PROJECT_ROOT, "data", "signalphaset")  # adjust if your 26k dataset is in a different location
 LABEL_1 = "87k-asl"
 LABEL_2 = "26k-asl"
 

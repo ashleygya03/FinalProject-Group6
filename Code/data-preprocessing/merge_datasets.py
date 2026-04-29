@@ -18,25 +18,25 @@ Features:
 
 Usage:
     # Basic merge: 500 from each dataset per alphabet
-    python merge_datasets.py \\
-        --dataset1 ~/Downloads/87k-cropped \\
-        --dataset2 ~/Downloads/26k-asl \\
-        --output ~/Downloads/merged-asl
+    python3 Code/data-preprocessing/merge_datasets.py \\
+        --dataset1 data/processed_asl \\
+        --dataset2 data/signalphaset \\
+        --output data/merged_asl_dataset 
 
     # With overrides for specific letters
-    python merge_datasets.py \\
-        --dataset1 ~/Downloads/87k-cropped \\
-        --dataset2 ~/Downloads/26k-asl \\
-        --output ~/Downloads/merged-asl \\
-        --dataset2-only D,G,M,N,P,T,X,Z \\
+    python3 Code/data-preprocessing/merge_datasets.py \
+        --dataset1 data/processed_asl \
+        --dataset2 data/signalphaset \
+        --output data/merged_asl_dataset \
+        --dataset2-only D,G,M,N,P,T,X,Z  \
         --dataset1-only J
 
     # With confidence filtering on dataset1
-    python merge_datasets.py \\
-        --dataset1 ~/Downloads/87k-cropped \\
-        --dataset2 ~/Downloads/26k-asl \\
-        --output ~/Downloads/merged-asl \\
-        --confidence-csv ~/Downloads/87k-cropped/confidence_scores.csv \\
+    python3 Code/data-preprocessing/merge_datasets.py \
+        --dataset1 ~/Downloads/87k-cropped \
+        --dataset2 ~/Downloads/26k-asl \
+        --output ~/Downloads/merged-asl \
+        --confidence-csv data/processed_asl/confidence_scores.csv \
         --confidence-threshold 0.7
 """
 
