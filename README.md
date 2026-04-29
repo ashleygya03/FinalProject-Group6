@@ -1,6 +1,7 @@
 # FinalProject-Group6
 
-# **Project:** Static American Sign Language (ASL) Alphabet Recognition  
+# **Project:** American Sign Language (ASL) Alphabet Classification using Deep Learning - A comparative study of ResNet-50 and MobileNetV2
+
 
 **Members:** Fyrooz Khan | Ashley Gyapomah
 
