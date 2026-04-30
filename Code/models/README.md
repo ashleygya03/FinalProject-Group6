@@ -1,4 +1,6 @@
-# This folder contains the models:
+# models
+
+This folder contains the models:
 
 ## Folder structure
 
