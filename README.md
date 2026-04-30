@@ -1,5 +1,5 @@
 # 🧠 American Sign Language (ASL) Alphabet Classification using Deep Learning  
-### A Comparative Study of ResNet-50 and MobileNetV2
+## A Comparative Study of ResNet-50 and MobileNetV2
 
 **Members:** Fyrooz Khan | Ashley Gyapomah  
 **Course:** DATS 6303 – Deep Learning  
