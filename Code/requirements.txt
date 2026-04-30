@@ -1,0 +1,11 @@
+# Dependencies for ASL classification project
+tensorflow
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+opencv-python
+split-folders
+streamlit
+Pillow

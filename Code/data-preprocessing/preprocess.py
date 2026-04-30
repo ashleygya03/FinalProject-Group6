@@ -28,7 +28,16 @@ Usage:
                          --contrast-threshold 17 \\
                          --resize 296 \\
                          -w 8
-
+    
+    Example:
+    python Code/data-preprocessing/preprocess.py \
+    -i data/asl_alphabet \
+    -o data/processed_asl \
+    --brightness-threshold 40 \
+    --contrast-threshold 17 \
+    --resize 296 \
+    -w 8
+                         
     # Skip brightness filter (crop + contrast only)
     python preprocess.py -i ./dataset -o ./cropped --brightness-threshold 0
 

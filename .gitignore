@@ -2,6 +2,9 @@
 # Ignore the dataset folder
 data/
 asl_data/
+working/
+Code/working/
+outputs/
 *.h5
 *.keras
 *.pkl
