@@ -1,4 +1,4 @@
-# models
+# Models
 
 This folder contains the models:
 
