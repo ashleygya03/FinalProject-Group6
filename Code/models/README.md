@@ -1,5 +1,3 @@
-# Code
-
 This folder contains the models:
 
 ## Folder structure
