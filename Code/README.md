@@ -8,7 +8,7 @@ This folder contains all code for the final project, including data preprocessin
 │
 ├── README.md
 │
-├── data_preprocessing/
+├── data-preprocessing/
 │   ├── README.md
 │   ├── compare_datasets.py
 │   ├── preprocess.py
@@ -19,9 +19,9 @@ This folder contains all code for the final project, including data preprocessin
 │
 ├── models/
 │   ├── mobilenetv2/
-│   │   └── main_mobilenetv2.py
+│   │   └── main.py
 │   ├── resnet50/
-│   │   └── main_resnet50.py
+│   │   └── main.py
 │
 └── demo/
     ├── README.md
