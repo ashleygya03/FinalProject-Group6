@@ -7,10 +7,6 @@ This folder contains all code for the final project, including data preprocessin
 ```text
 │
 ├── README.md
-├── requirements.txt
-├── configs/
-│   ├── config.py
-│   
 │
 ├── data_preprocessing/
 │   ├── README.md
@@ -25,36 +21,22 @@ This folder contains all code for the final project, including data preprocessin
 │   ├── mobilenetv2/
 │   │   └── main_mobilenetv2.py
 │   ├── resnet50/
-│   │   └── main.py
-│   └── src/
-│       ├── dataset.py
-│       ├── utils.py
-│       ├── model_mobilenetv2.py
-│       └── model_resnet50.py
+│   │   └── main_resnet50.py
 │
-├── outputs/
-│   ├── mobilenetv2/
-│   └── resnet50/
-│
-├── demo/
-│   ├── README.md
-│   ├── app.py
-│   ├── predict.py
-│   └── src/
-│
-├── artifacts/
-│   ├── best_asl_model.keras
-│   ├── class_names.json
-│   └── hand_landmarker.task
-│
-└── tests/
+└── demo/
+    ├── README.md
+    ├── app.py
+    ├── predict.py
+    ├── requirements_demo.txt
+    ├── class_names.json
+    ├── hand_landmarker.task
+    ├── best_asl_model.keras
+    └── src/
 
 ```
 ## Run Order
 
-### 1. pip install -r requirements.txt
-
-### 2. `data-preprocessing/`
+### 1. `data-preprocessing/`
 Run scripts in this order:
 1. `compare_datasets.py` — compares the two ASL datasets
 2. `preprocess.py` — crops and filters the 87K dataset
@@ -66,14 +48,14 @@ Run scripts in this order:
 - [SignAlphaSet](https://data.mendeley.com/datasets/8fmvr9m98w/2)
 
 ---
-### 3. `models/`
+### 2. `models/`
 Run the following on the new produced dataset:
 - `main_resnet50.py` — trains and evaluates the ResNet50 model
 - `main_mobilenetv2.py` — trains and evaluates the MobileNetV2 model
 
 ---
 
-### 4. `demo/`
+### 3. `demo/`
 Run after training the MobileNetV2 model:
 - `app.py` — launches the Streamlit app for live ASL sign prediction
 
