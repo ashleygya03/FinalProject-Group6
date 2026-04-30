@@ -43,7 +43,7 @@ FinalProject-Group6/
 ├── Ashley-Gyapomah-Individual-Project/
 ├── Fyrooz-Khan-individual-project/
 ├── Code/
-│   ├── data_preprocessing/
+│   ├── data-preprocessing/
 │   ├── models/
 │   │   ├── mobilenetv2/
 │   │   ├── resnet50/
