@@ -66,15 +66,18 @@ Run scripts in this order:
 - [SignAlphaSet](https://data.mendeley.com/datasets/8fmvr9m98w/2)
 
 ---
+### 3. `models/`
+Contains the two model folders:
+- `models/resnet50/` — has `main_resnet50.py`
+- `models/mobilenetv2/` — has `main_mobilenetv2.py`
 
-### 2. `resnet50/` and `mobilenetv2/`
 Run the following on the new produced dataset:
 - `main_resnet50.py` — trains and evaluates the ResNet50 model
 - `main_mobilenetv2.py` — trains and evaluates the MobileNetV2 model
 
 ---
 
-### 3. `demo/`
+### 4. `demo/`
 Run after training the MobileNetV2 model:
 - `app.py` — launches the Streamlit app for live ASL sign prediction
 
