@@ -7,34 +7,16 @@ from keras.callbacks import EarlyStopping, ReduceLROnPlateau, ModelCheckpoint
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.models import load_model
 
-from Code.configs.config import (
-    CATEGORIES,
-    IMAGE_SIZE,
-    IMG_CHANNEL,
-    N_CLASSES,  
-    TRAINING_CONFIG, 
-    RESNET50_CONFIG, 
-    CALLBACKS_CONFIG
-)
-from Code.models.src.dataset import ASLDataset
-from Code.models.src.model_resnet50 import ASLModel
-from Code.models.src.utils import (
+from src.config_resnet50 import IMAGE_SIZE, IMG_CHANNEL, N_CLASSES, CATEGORIES
+from src.dataset_resnet50 import ASLDataset
+from src.model_resnet50 import ASLModel
+from src.utils import (
     plot_training_history, plot_confusion_matrix, plot_per_class_f1,
     print_top_confused_pairs, compute_top_k_accuracy, save_history
 )
 
 # Output directory for all saved figures and results
-OUTPUT_DIR = RESNET50_CONFIG["output_dir"]
-
-CHECKPOINT_PATH = RESNET50_CONFIG["checkpoint_path"]
-
-EPOCHS_PHASE1 = TRAINING_CONFIG["epochs_phase1"]
-EPOCHS_PHASE2 = TRAINING_CONFIG["epochs_phase2"]
-
-PHASE1_LR = RESNET50_CONFIG["learning_rates"]["phase1"]
-PHASE2_LR = RESNET50_CONFIG["learning_rates"]["phase2"]
-
-FINE_TUNE_AT = RESNET50_CONFIG["fine_tune_at"]
+OUTPUT_DIR = "outputs_resnet50"
 
 def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -73,9 +55,9 @@ def main():
             verbose=1
         ),
         ModelCheckpoint(
-            CHECKPOINT_PATH,
-            monitor=CALLBACKS_CONFIG["checkpoint"]["monitor"],
-            save_best_only=CALLBACKS_CONFIG["checkpoint"]["save_best_only"],
+            "best_asl_model.keras",
+            monitor='val_accuracy',
+            save_best_only=True,
             mode='max',
             verbose=1
         )
@@ -83,7 +65,7 @@ def main():
 
     # phase 1: train classifier head
     model.compile(
-        optimizer=Adam(learning_rate=PHASE1_LR),
+        optimizer=Adam(learning_rate=1e-3),
         loss='categorical_crossentropy',
         metrics=['accuracy']
     )
@@ -91,7 +73,7 @@ def main():
     history1 = model.fit(
         train_data,
         validation_data=val_data,
-        epochs=EPOCHS_PHASE1,
+        epochs=10,
         callbacks=callbacks,
         verbose=1
     )
@@ -100,10 +82,10 @@ def main():
     save_history(history1, os.path.join(OUTPUT_DIR, "history_phase1.json"))
 
     # phase 2: fine-tuning – unfreeze the last ~35 ResNet50 layers
-    asl_model_class.unfreeze_top_layers(fine_tune_at=FINE_TUNE_AT)
+    asl_model_class.unfreeze_top_layers(fine_tune_at=140)
 
     model.compile(
-        optimizer=Adam(learning_rate=PHASE2_LR),
+        optimizer=Adam(learning_rate=1e-5),
         loss='categorical_crossentropy',
         metrics=['accuracy']
     )
@@ -111,7 +93,7 @@ def main():
     history2 = model.fit(
         train_data,
         validation_data=val_data,
-        epochs=EPOCHS_PHASE2,
+        epochs=10,
         callbacks=callbacks,
         verbose=1
     )
@@ -120,7 +102,7 @@ def main():
     save_history(history2, os.path.join(OUTPUT_DIR, "history_phase2.json"))
 
     # load best saved model before evaluation
-    model = load_model(CHECKPOINT_PATH)
+    model = load_model("best_asl_model.keras")
 
     # save class names for Streamlit inference
     class_names = list(CATEGORIES.values())
