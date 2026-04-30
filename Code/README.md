@@ -19,9 +19,9 @@ This folder contains all code for the final project, including data preprocessin
 │
 ├── models/
 │   ├── mobilenetv2/
-│   │   └── main_resnet50.py
+│   │   └── main_mobilenetv2.py
 │   ├── resnet50/
-│       └── main_mobilenetv2.py
+│       └── main_resnet50.py
 │
 └── demo/
     ├── README.md
