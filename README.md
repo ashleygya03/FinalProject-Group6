@@ -43,17 +43,12 @@ FinalProject-Group6/
 ├── Ashley-Gyapomah-Individual-Project/
 ├── Fyrooz-Khan-individual-project/
 ├── Code/
-│   ├── configs/
-│   │   └── config.py
 │   ├── data_preprocessing/
 │   ├── models/
 │   │   ├── mobilenetv2/
 │   │   ├── resnet50/
-│   │   └── src/
-│   ├── outputs/
 │   ├── demo/
-│   ├── artifacts/
-│   └── requirements.txt
+│   
 ├── Final-Group-Presentation/
 ├── Final-Group-Project-Report/
 ├── Group-Proposal/
